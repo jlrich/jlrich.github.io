@@ -19,7 +19,7 @@ String [] victory;
 
 PFont font;
 
-void init() {
+void initialize() {
   
   start = "start";
   end = "end";
@@ -36,12 +36,10 @@ void init() {
   
   player_1 = Math.round(random(1, 2))==1  ? "O" : "X";
   player_2 = player_1 =="X" ? "O" : "X";
-
-  super.init();
 }
   
 void setup() {
-  frame.setTitle("Tic tac toe");
+  initialize();
   
   size(640,480);
   background(0);  
